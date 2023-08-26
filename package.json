@@ -37,6 +37,11 @@
     ]
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^10.0.1",
+    "@semantic-release/github": "^9.0.4",
+    "@semantic-release/npm": "^10.0.5",
+    "@semantic-release/release-notes-generator": "^11.0.4",
     "@types/humps": "^2.0.3",
     "@types/node": "^18.11.9",
     "@types/uuid": "^9.0.2",
