@@ -18,8 +18,15 @@ Before starting, make sure you've met the following requirements:
 
 ## 🚀 Features
 
-There are many features:
+This library provides a robust set of functionalities designed to assist in application development:
 
-```bash
-$ aws configure
-```
+- **Logging**: A logging system using the `Logger` module.
+- **Base Entity**: The `BaseEntity` offers an initial structure for your entities.
+
+- **Response Management**: Effortlessly manage your application's responses with a variety of tools, including:
+  - `ApplicationResult`: A generic application response manager.
+  - `ApplicationResultSuccess`: Specifically designed for handling successful responses.
+  - `ApplicationResultError`: For handling generic error responses.
+  - `ApplicationResultNotFound`: To address 'Not Found' scenarios.
+  - `ApplicationResultUnauthorized`: For handling unauthorized accesses.
+  - `ApplicationResultForbidden`: To manage 'Access Forbidden' scenarios.

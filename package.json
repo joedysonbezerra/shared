@@ -1,7 +1,8 @@
 {
-  "name": "shared",
+  "name": "@kernelsoftware/shared",
   "version": "0.0.0-semantically-released",
   "description": "Shared resources library for multiple projects",
+  "private": false,
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -26,13 +27,20 @@
   "homepage": "https://github.com/joedysonbezerra/shared#readme",
   "release": {
     "branches": [
-      "main"
+      "master"
     ],
     "plugins": [
       "@semantic-release/commit-analyzer",
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
-      "@semantic-release/npm",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": true,
+          "tarballDir": "dist",
+          "access": "public"
+        }
+      ],
       "@semantic-release/github"
     ]
   },
