@@ -4,7 +4,8 @@ import { toSnakeCase } from '@utils/toSnakeCase';
 import { StatusCodes } from 'http-status-codes';
 import { IHttpResponse } from '@domain/contracts/interfaces/http/responses/IHttpResponse';
 
-export abstract class BaseController {
+export abstract class BaseController<TEvent> {
+  abstract handle(event: TEvent): Promise<IHttpResponse>;
   handleResult<T>(result: ApplicationResult<T>): IHttpResponse {
     if (result.status === ApplicationEvents.NOT_FOUND) {
       return {
