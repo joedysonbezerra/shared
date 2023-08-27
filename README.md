@@ -1,13 +1,15 @@
 # Shared Project
 
 ![Made using Typescript](https://badgen.net/badge/icon/typescript?icon=typescript&label&color=purple)
+[![Release npm package](https://github.com/joedysonbezerra/shared/actions/workflows/release.yaml/badge.svg?branch=master)](https://github.com/joedysonbezerra/shared/actions/workflows/release.yaml)
+
 
 Library for important resources when there is a chance that these resources will be used in many projects
 
 ## How to use this template
 
 ```bash
-$ npm install ...
+$ npm install @kernelsoftware/shared
 ```
 
 ## 💻 Requirements
