@@ -3,7 +3,9 @@ import { ApplicationResult } from '@domain/responses/ApplicationResult';
 import { toSnakeCase } from '@utils/toSnakeCase';
 import { StatusCodes } from 'http-status-codes';
 import { IHttpResponse } from '@domain/contracts/interfaces/http/responses/IHttpResponse';
+import { injectable } from 'inversify';
 
+@injectable()
 export abstract class BaseController<TEvent> {
   abstract handle(event: TEvent): Promise<IHttpResponse>;
   handleResult<T>(result: ApplicationResult<T>): IHttpResponse {
