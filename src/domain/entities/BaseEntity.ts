@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-function */
 import { Expose, Type } from 'class-transformer';
 import { v4 as uuidv4 } from 'uuid';
 import { Base } from '@domain/Base';
@@ -19,7 +18,9 @@ export class BaseEntity extends Base {
     return this.id;
   }
 
-  public set uuid(_: string) {}
+  public set uuid(_: string) {
+    throw new Error('Cannot set the uuid directly.');
+  }
 
   static generateId() {
     return uuidv4();
@@ -34,7 +35,9 @@ export class BaseEntity extends Base {
     return this.createdAt;
   }
 
-  public set created_at(_: string) {}
+  public set created_at(_: Date) {
+    throw new Error('Cannot set the created_at date directly.');
+  }
 
   @Expose()
   @Type(() => Date)
@@ -43,5 +46,7 @@ export class BaseEntity extends Base {
     return this.updatedAt;
   }
 
-  public set updated_at(_: string) {}
+  public set updated_at(_: Date) {
+    throw new Error('Cannot set the updated_at date directly.');
+  }
 }
