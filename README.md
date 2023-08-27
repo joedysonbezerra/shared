@@ -6,7 +6,7 @@
 
 Library for important resources when there is a chance that these resources will be used in many projects
 
-## How to use this template
+## How to use this lib
 
 ```bash
 $ npm install @kernelsoftware/shared
