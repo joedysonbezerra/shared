@@ -9,3 +9,6 @@ export { ApplicationResultForbidden } from '@domain/responses/AplicationResultFo
 export { centavosToReal } from '@utils/centavosToReal';
 export { realToCentavos } from '@utils/realToCentavos';
 export { getEnvOrThrow, getEnvOrDefault } from '@utils/helpersToEnv';
+export { BaseController } from '@domain/contracts/interfaces/http/IController';
+export { BaseDTO } from '@domain/contracts/interfaces/dtos/BaseDTO';
+export { ErrorHttpHandler } from '@domain/responses/ErrorHttpHandler';
