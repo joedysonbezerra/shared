@@ -6,3 +6,5 @@ export { ApplicationResultError } from '@domain/responses/ApplicationResultError
 export { ApplicationResultNotFound } from '@domain/responses/ApplicationResultNotFound';
 export { ApplicationResultUnauthorized } from '@domain/responses/AplicationResultUnauthorized';
 export { ApplicationResultForbidden } from '@domain/responses/AplicationResultForbidden';
+export { centavosToReal } from '@utils/centavosToReal';
+export { realToCentavos } from '@utils/realToCentavos';

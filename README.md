@@ -22,7 +22,6 @@ This library provides a robust set of functionalities designed to assist in appl
 
 - **Logging**: A logging system using the `Logger` module.
 - **Base Entity**: The `BaseEntity` offers an initial structure for your entities.
-
 - **Response Management**: Effortlessly manage your application's responses with a variety of tools, including:
   - `ApplicationResult`: A generic application response manager.
   - `ApplicationResultSuccess`: Specifically designed for handling successful responses.
@@ -30,3 +29,6 @@ This library provides a robust set of functionalities designed to assist in appl
   - `ApplicationResultNotFound`: To address 'Not Found' scenarios.
   - `ApplicationResultUnauthorized`: For handling unauthorized accesses.
   - `ApplicationResultForbidden`: To manage 'Access Forbidden' scenarios.
+- **Currency Conversion**:
+  - `centavosToReal`: Convert centavo values (integer representation of currency) to its real (BRL) formatted string counterpart, e.g., converting 100 centavos to R$1,00.
+  - `realToCentavos`: Convert a real (BRL) formatted string to its centavo integer representation, e.g., converting R$1,00 to 100 centavos.
