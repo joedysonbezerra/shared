@@ -8,3 +8,4 @@ export { ApplicationResultUnauthorized } from '@domain/responses/AplicationResul
 export { ApplicationResultForbidden } from '@domain/responses/AplicationResultForbidden';
 export { centavosToReal } from '@utils/centavosToReal';
 export { realToCentavos } from '@utils/realToCentavos';
+export { getEnvOrThrow, getEnvOrDefault } from '@utils/helpersToEnv';
