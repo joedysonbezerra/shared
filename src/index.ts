@@ -12,5 +12,6 @@ export {
   ApplicationResultUnauthorized,
   ErrorHttpHandler,
 } from '@domain/responses/index';
+export { DynamoHelper } from '@infrastructures/dynamoHelper/DynamoHelper';
 export { Logger } from '@infrastructures/logger/Logger';
 export { centavosToReal, getEnvOrDefault, getEnvOrThrow, realToCentavos, toCamelCase, toSnakeCase } from '@utils/index';
