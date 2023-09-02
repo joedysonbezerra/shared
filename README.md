@@ -57,5 +57,11 @@ This library provides a robust set of functionalities designed to assist in appl
   - `BaseDTO`: Offers static validation utility for validating DTOs based on class-validator rules and converting plain objects to DTO instances.
 
 - **Object Key Conversion Utilities**:
+
   - `toCamelCase(obj: object)`: Converts the keys of an object to `camelCase` format. Useful for standardizing object keys to camelCase before saving to databases or sending to APIs.
   - `toSnakeCase(obj: object)`: Converts the keys of an object to `snake_case` format. Useful for APIs that require snake_case keys in payloads.
+
+- **DynamoHelper**: This utility class helps with common DynamoDB operations.
+
+  - `upsert(Model: ModelType<AnyItem>, data: Record<string, unknown>)`: Performs an upsert operation. Inserts the record if it does not exist or updates it if it does. The `Model` parameter specifies the DynamoDB model, and the `data` parameter specifies the data to be inserted or updated.
+  - `findOne(model: ModelType<AnyItem>, key: string, value: string)`: Finds a single record that matches the specified key and value. Returns `null` if no match is found.
