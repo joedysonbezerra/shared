@@ -1,14 +1,14 @@
 export { BaseDTO } from '@domain/contracts/interfaces/dtos/BaseDTO';
 export { BaseController } from '@domain/contracts/interfaces/http/BaseController';
 export { BaseEntity } from '@domain/entities/BaseEntity';
-export { ApplicationResultForbidden } from '@domain/responses/AplicationResultForbidden';
-export { ApplicationResultUnauthorized } from '@domain/responses/AplicationResultUnauthorized';
-export { ApplicationResult } from '@domain/responses/ApplicationResult';
-export { ApplicationResultError } from '@domain/responses/ApplicationResultError';
-export { ApplicationResultNotFound } from '@domain/responses/ApplicationResultNotFound';
-export { ApplicationResultSuccess } from '@domain/responses/ApplicationResultSuccess';
-export { ErrorHttpHandler } from '@domain/responses/ErrorHttpHandler';
+export {
+  ApplicationResultForbidden,
+  ApplicationResultNotFound,
+  ApplicationResultSuccess,
+  ErrorHttpHandler,
+  ApplicationResultUnauthorized,
+  ApplicationResult,
+  ApplicationResultError,
+} from '@domain/responses/index';
 export { Logger } from '@infrastructures/logger/Logger';
-export { centavosToReal } from '@utils/centavosToReal';
-export { getEnvOrDefault, getEnvOrThrow } from '@utils/helpersToEnv';
-export { realToCentavos } from '@utils/realToCentavos';
+export { centavosToReal, getEnvOrDefault, getEnvOrThrow, realToCentavos, toCamelCase, toSnakeCase } from '@utils/index';

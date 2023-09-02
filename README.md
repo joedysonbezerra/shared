@@ -52,4 +52,9 @@ This library provides a robust set of functionalities designed to assist in appl
   - `BaseController`: Abstract controller offering a `handleResult` method to convert application results into HTTP responses. Useful for keeping the responses consistent.
 
 - **Data Transfer Object (DTO) Utilities**:
+
   - `BaseDTO`: Offers static validation utility for validating DTOs based on class-validator rules and converting plain objects to DTO instances.
+
+- **Object Key Conversion Utilities**:
+  - `toCamelCase(obj: object)`: Converts the keys of an object to `camelCase` format. Useful for standardizing object keys to camelCase before saving to databases or sending to APIs.
+  - `toSnakeCase(obj: object)`: Converts the keys of an object to `snake_case` format. Useful for APIs that require snake_case keys in payloads.
