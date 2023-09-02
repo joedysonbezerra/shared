@@ -23,6 +23,7 @@ This library provides a robust set of functionalities designed to assist in appl
 
 - **Logging**: A logging system using the `Logger` module.
 - **Base Entity**: The `BaseEntity` offers an initial structure for your entities.
+- **Base Model**: The `BaseModel` offers an initial structure for your models.
 
 - **Response Management**: Effortlessly manage your application's responses with a variety of tools, including:
 
