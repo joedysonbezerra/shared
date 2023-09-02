@@ -1,7 +1,8 @@
+export { IDatabaseModel } from '@domain/contracts/infrastructure/IDatabaseModel';
 export { BaseDTO } from '@domain/contracts/interfaces/dtos/BaseDTO';
 export { BaseController } from '@domain/contracts/interfaces/http/BaseController';
+export { IUseCase } from '@domain/contracts/usecases/IUsecase';
 export { BaseEntity } from '@domain/entities/BaseEntity';
-export { IDatabaseModel } from '@domain/contracts/infrastructure/IDatabaseModel';
 export {
   ApplicationResult,
   ApplicationResultError,

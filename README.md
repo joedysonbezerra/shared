@@ -52,6 +52,10 @@ This library provides a robust set of functionalities designed to assist in appl
 
   - `BaseController`: Abstract controller offering a `handleResult` method to convert application results into HTTP responses. Useful for keeping the responses consistent.
 
+- **IUsecase**:
+
+  - `IUsecase`: Provides a contract to usecases methods.
+
 - **Data Transfer Object (DTO) Utilities**:
 
   - `BaseDTO`: Offers static validation utility for validating DTOs based on class-validator rules and converting plain objects to DTO instances.
