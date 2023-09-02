@@ -13,7 +13,7 @@ export class DynamoHelper {
 
       const item = new Model(data);
 
-      item.save();
+      await item.save();
 
       return item;
     } catch (error) {
