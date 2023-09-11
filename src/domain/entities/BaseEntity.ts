@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 import { Expose, Type } from 'class-transformer';
 import { v4 as uuidv4 } from 'uuid';
 import { Base } from '@domain/Base';
@@ -18,6 +19,8 @@ export class BaseEntity extends Base {
     return this.id;
   }
 
+  public set uuid(_: string) {}
+
   static generateId() {
     return uuidv4();
   }
@@ -31,10 +34,14 @@ export class BaseEntity extends Base {
     return this.createdAt;
   }
 
+  public set created_at(_: string) {}
+
   @Expose()
   @Type(() => Date)
   public get updated_at(): Date {
     this.updatedAt = new Date();
     return this.updatedAt;
   }
+
+  public set updated_at(_: string) {}
 }
