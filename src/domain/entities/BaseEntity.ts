@@ -34,7 +34,7 @@ export class BaseEntity extends Base {
     return this.createdAt;
   }
 
-  public set created_at(_: string) {}
+  public set created_at(_: Date) {}
 
   @Expose()
   @Type(() => Date)
@@ -43,5 +43,5 @@ export class BaseEntity extends Base {
     return this.updatedAt;
   }
 
-  public set updated_at(_: string) {}
+  public set updated_at(_: Date) {}
 }
