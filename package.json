@@ -83,7 +83,7 @@
   },
   "dependencies": {
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.0",
+    "class-validator": "^0.13.2",
     "dynamoose": "^3.2.0",
     "http-status-codes": "^2.2.0",
     "humps": "^2.0.1",
