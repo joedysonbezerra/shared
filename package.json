@@ -68,7 +68,7 @@
     "typescript": "^4.9.3"
   },
   "engines": {
-    "node": "18.x"
+    "node": "16.x"
   },
   "husky": {
     "hooks": {
