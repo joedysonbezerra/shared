@@ -6,8 +6,8 @@ export class BaseDTO extends Base {
     type: new () => T,
     plain: NonNullable<unknown> | string
   ): { entity: T; errors: ValidationError[] } {
-    if (plain instanceof String) {
-      plain = JSON.parse(plain.toString());
+    if (typeof plain === 'string') {
+      plain = JSON.parse(plain);
     }
 
     const entity = this.fromPlain(type, plain);
