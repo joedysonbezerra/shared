@@ -2,12 +2,19 @@ import * as dynamoose from 'dynamoose';
 import { ModelType } from 'dynamoose/dist/General';
 import { AnyItem } from 'dynamoose/dist/Item';
 
+interface AWSConfig {
+  credentials: {
+    accessKeyId: string;
+    secretAccessKey: string;
+    sessionToken: string;
+  };
+  region: string;
+}
+
 export class DynamoHelper {
-  static async upsert(Model: ModelType<AnyItem>, data: Record<string, unknown>): Promise<AnyItem> {
+  static async upsert(config: AWSConfig, Model: ModelType<AnyItem>, data: Record<string, unknown>): Promise<AnyItem> {
     try {
-      const ddb = new dynamoose.aws.ddb.DynamoDB({
-        region: process.env.AWS_REGION,
-      });
+      const ddb = new dynamoose.aws.ddb.DynamoDB(config);
 
       dynamoose.aws.ddb.set(ddb);
 

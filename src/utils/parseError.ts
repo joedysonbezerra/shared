@@ -1,10 +1,14 @@
-const parseError = (error?: Error): Error | string | undefined => {
-  if (error === undefined) {
+const parseError = (error?: Error): object | string | undefined => {
+  if (!error) {
     return undefined;
   }
 
-  if (error instanceof Object) {
-    return JSON.stringify(error);
+  if (error instanceof Error) {
+    return {
+      message: error.message,
+      stack: error.stack,
+      name: error.name,
+    };
   }
 
   return error;
