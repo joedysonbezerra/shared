@@ -2,7 +2,7 @@ import * as dynamoose from 'dynamoose';
 import { ModelType } from 'dynamoose/dist/General';
 import { AnyItem } from 'dynamoose/dist/Item';
 
-interface AWSConfig {
+export interface AWSConfig {
   credentials: {
     accessKeyId: string;
     secretAccessKey: string;
