@@ -24,7 +24,7 @@ export class DynamoHelper {
 
       return item;
     } catch (error) {
-      throw new Error('Failed when trying to insert or update item from database');
+      throw new Error(error as string);
     }
   }
 
