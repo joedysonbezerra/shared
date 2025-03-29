@@ -10,12 +10,10 @@ class Logger implements ILogger {
 
   public constructor(logLevel: string, applicationName: string) {
     this.logger = pino({
-      changeLevelName: 'log-level',
       level: logLevel,
       messageKey: 'message',
       name: applicationName,
       timestamp: (): string => `,"date": "${new Date().toISOString()}"`,
-      useLevelLabels: true,
       formatters: {
         level: (level) => ({ level }),
       },
